@@ -1,0 +1,147 @@
+{
+	"categoryList":{
+		"button": {
+		"add": "Thêm danh mục",
+		"modify": "Chỉnh sửa danh mục",
+		"save": "Lưu",
+		"cancel": "Huỷ"
+	},
+		"select": {
+		"label": {
+			"status": "Trạng thái hiển thị"
+		},
+		"statusOptions": {
+			"all": "Tất cả",
+			"show": "Hiện",
+			"hide": "Ẩn"
+		}
+	},
+		"drawer": {
+		"title": "Thêm danh mục",
+		"label": {
+			"name": "Tên danh mục",
+			"status": "Trạng thái"
+		},
+		"statusOptions": {
+			"show": "Hiển thị",
+			"hide": "Ẩn"
+		}
+	},
+		"switch": {
+		"enable": "Hiện",
+		"disable": "Ẩn"
+	},
+		"category": "Danh mục"
+},
+	"categoryCurrency":{
+		"button": {
+			"add": "Thêm mới",
+			"modify": "Lưu",
+			"save": "Tạo mới",
+			"cancel": "Huỷ"
+		},
+		"drawer":{
+			"title":{
+				"add": "Thêm đơn vị tiền tệ",
+				"modify": "Chỉnh sửa đơn vị tiền tệ"
+			},
+			"label": {
+				"name": "Đơn vị tiền tệ",
+				"status": "Trạng thái"
+			},
+			"statusOptions": {
+				"show": "Hiển thị",
+				"hide": "Ẩn"
+			}
+		}
+	},
+	"categoryTax": {
+		"button": {
+			"add": "Thêm mới",
+			"modify": "Lưu",
+			"save": "Tạo mới",
+			"confirm": "Xác nhận",
+			"cancel": "Huỷ"
+		},
+		"table": {
+			"header": {
+				"id": "#",
+				"description": "Mô tả",
+				"name": "Thuế",
+				"status": "Hiển thị",
+				"action": "Hành động"
+			}
+		},
+		"drawer":{
+			"title":{
+				"add": "Thêm mới thuế",
+				"modify": "Chỉnh sửa thuế"
+			},
+			"label": {
+				"name": "Thuế",
+				"note": "Mô tả",
+				"status": "Trạng thái"
+			},
+			"statusOptions": {
+				"show": "Hiển thị",
+				"hide": "Ẩn"
+			},
+			"text": {
+				"name": {
+					"placeholder": "Thuế"
+				},
+				"note": {
+					"placeholder": "Mô tả về thuế"
+				},
+				"rules": {
+					"validateRequireInput": "Vui lòng không để trống mục này"
+				}
+			}
+		},
+		"modal": {
+			"titleDelete": "Bạn có chắc chắc muốn xóa Thuế này không?",
+			"titleSwitch": "Bạn có chắc chắn muốn thay đổi trạng thái hiển thị?"
+		},
+		"updateStatus": {
+			"onSuccess": "Cập nhật Thuế thành công.",
+			"onError" : {
+				"notFound": "Thuế đã xóa trước đó."
+			}
+		},
+		"checkAllowDelete": {
+			"notAllowDelete" : "Thuế đã được sử dụng nên không thể xóa.",
+			"onError" : {
+				"notFound": "Thuế đã xóa trước đó."
+			}
+		},
+		"deleteTax": {
+			"onSuccess": "Xóa Thuế thành công.",
+			"onError": {
+				"notFound": "Thuế đã xóa trước đó.",
+				"notAllowDel": "Thuế đã được sử dụng nên không thể xóa."
+			}
+		},
+		"addTax": {
+			"onSuccess": "Tạo mới Thuế thành công.",
+			"onError": {
+				"exists": "Thuế đã tồn tại."
+			}
+		},
+		"modifyTax": {
+			"onSuccess": "Cập nhật Thuế thành công.",
+			"onError": {
+				"exists" : "Thuế đã tồn tại.",
+				"notFound" : "Thuế đã được xóa trước đó.",
+				"notChange": "Thuế không được phép thay đổi tên."
+			}
+		},
+		"getUnitInfo": {
+			"onError": {
+				"notFound" : "Thuế đã được xóa trước đó."
+			}
+		},
+		"handleDelBtn": {
+			"notAllowDelete": "Thuế đã được sử dụng nên không thể xóa."
+		}
+	}
+}

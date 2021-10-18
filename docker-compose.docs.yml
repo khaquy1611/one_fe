@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  docs:
+    image: node:14.15.4-alpine3.10
+    command: sh -c "npm install --global yarn"
+    working_dir: /app
+    command:  sh -c "yarn && yarn build"
+    volumes:
+      - ./docs:/app
+      - /app/node_modules
+      - builder-docs:/app/build
+volumes:
+  builder-docs:

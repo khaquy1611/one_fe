@@ -1,0 +1,99 @@
+{
+	"saas": {
+		"serviceType": {
+			"ONCE": "Một lần",
+			"PERIODIC": "Định kỳ"
+		},
+		"manage": {
+			"categoryManagement": "Quản lý danh mục",
+			"addCategories": "Thêm danh mục",
+			"placeholderSearch": "Tìm kiếm",
+			"vietnameseCategory": "Danh mục tiếng việt",
+			"englishCategory": "Danh mục tiếng anh",
+			"descriptionCategory": "Mô tả",
+			"statusCategory": "Trạng thái duyệt",
+			"display": "Hiển thị",
+			"status": "Trạng thái duyệt"
+		},
+		"list": {
+			"saasName": "Tên dịch vụ",
+			"developer": "Developer",
+			"time": "Thời gian cập nhật",
+			"categories": "Danh mục",
+			"all": "Tất cả",
+			"public": "Hiện",
+			"private": "Ẩn"
+		},
+		"createForm": {
+			"title": "Tạo danh mục mới",
+			"categoryNameVn": "Danh mục (Tiếng Việt)",
+			"categoryNameEn": "Danh mục (Tiếng Anh)",
+			"categoryDescription": "Mô tả danh mục",
+			"categoryStatus": "Trạng thái"
+		},
+		"devSaas": {
+			"serviceName": "Tên dịch vụ",
+			"servicePackName": "Tên gói dịch vụ",
+			"status": "Trạng thái",
+			"expiredDate": "Ngày hết hạn",
+			"addService": "Thêm thuê bao"
+		},
+		"smeSaas": {
+			"subscriberNumber": "Số người dùng",
+			"paymentPeriod": "Chu kỳ TT"
+		},
+		"smeBilling": {
+			"dateOfPayment": "Ngày thanh toán",
+			"packageName": "Tên gói",
+			"amount": "Tổng tiền",
+			"status": "Trạng thái"
+		},
+		"servicePack": {
+			"basic": "Gói cơ bản",
+			"enterprise": "Gói doanh nghiệp",
+			"vip": "Gói vip"
+		},
+		"status": {
+			"reject": "Từ chối",
+			"approved": "Đã duyệt",
+			"unapproved": "Chưa duyệt",
+			"awaiting": "Chờ duyệt",
+			"displayStatus": "Trạng thái hiển thị"
+		},
+		"edit": {
+			"approved": "Đã phê duyệt",
+			"notApproved": "Chưa phê duyệt",
+			"editBasicInfo": "Chỉnh sửa thông tin cơ bản",
+			"editDesProduct": "Chỉnh sửa mô tả dịch vụ",
+			"nameProduct": "Tên dịch vụ",
+			"status": "Trạng thái",
+			"language": "Ngôn ngữ hỗ trợ",
+			"typeProduct": "Phân loại dịch vụ",
+			"emailSupport": "Email hỗ trợ",
+			"phoneSupport": "Số điện thoại hỗ trợ",
+			"url": "URL dịch vụ",
+			"public": "Hiện",
+			"hide": "Ẩn",
+			"preview": "Xem trước",
+			"requestApproval": "Yêu cầu phê duyệt",
+			"updateBtn": "Cập nhật",
+			"cancel": "Hủy"
+		},
+		"use": {
+			"enable": "Hiện",
+			"disable": "Ẩn"
+		},
+		"productType": {
+			"1": "Ứng dụng ",
+			"2": "Giao thông",
+			"3": "Giáo dục",
+			"4": "Thiết bị",
+			"5": "Y tế",
+			"6": "Văn hóa"
+		},
+		"languageType": {
+			"0": "Tiếng Việt",
+			"1": "Tiếng Anh "
+		}
+	}
+}

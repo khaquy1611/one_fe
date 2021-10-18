@@ -1,0 +1,9 @@
+{
+	"evaluate": {
+		"serviceName": "Tên dịch vụ",
+		"display": "Hiển thị",
+		"newComment": "Tổng nhận xét",
+		"pendingComment": "Nhận xét chưa trả lời",
+		"averageRating": "Điểm đánh giá trung bình"
+	}
+}

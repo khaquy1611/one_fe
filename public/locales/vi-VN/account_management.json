@@ -1,0 +1,86 @@
+{
+	"account": {
+		"table": {
+			"accountAdmin": "Tài khoản",
+			"accountDev": "Tên nhà phát triển",
+			"accountSme": "Tên SME",
+			"email": "Email",
+			"phoneNumber": "Số điện thoại",
+			"role": "Vai trò",
+			"status": "Trạng thái",
+			"active": "Hoạt động",
+			"inactive": "Không hoạt động",
+			"viewProfile": "Xem profile",
+			"addAccount": "Tạo tài khoản",
+			"editAccount": "Chỉnh sửa",
+			"onAndOffStatus": "Bật/Tắt hoạt động",
+			"firstName": "Họ",
+			"lastName": "Tên"
+		},
+		"form": {
+			"title": {
+				"create": "Tạo tài khoản",
+				"edit": "Chỉnh sửa tài khoản"
+			},
+			"placeholder": {
+				"account": "Nhập tài khoản",
+				"email": "Nhập email",
+				"role": "Chọn một vai trò",
+				"status": "Chọn một trạng thái",
+				"fullName": "Vui lòng Nhập đầy đủ họ tên",
+				"phoneNumber": "Nhập số điện thoại",
+				"username": "Nhập tên tài khoản",
+				"firstName": "Họ",
+				"lastName": "Tên"
+			},
+			"button": {
+				"okAdd": "Tạo",
+				"okEdit": "Lưu ",
+				"cancel": "Hủy",
+				"delete": "Xóa tài khoản"
+			},
+			"validation": {
+				"required": {
+					"account": "Vui lòng nhập tài khoản",
+					"email": "Vui lòng nhập email",
+					"role": "Vui lòng chọn một vai trò",
+					"status": "Vui lòng chọn một trạng thái",
+					"fullName": "Vui lòng Nhập đầy đủ họ tên",
+					"phoneNumber": "Vui lòng nhập số điện thoại",
+					"username": "Vui lòng nhập tên tài khoản",
+					"firstName": "Họ không được bỏ trống",
+					"lastName": "Tên không được bỏ trống"
+				},
+				"emailValid": "Email không phải là một email hợp lệ"
+			}
+		},
+		"confirm": {
+			"title": {
+				"create": "Bạn có chắc chắn muốn tạo tài khoản?",
+				"edit": "Chỉnh sửa thông tin tài khoản?",
+				"delete": "Bạn có chắc muốn xóa tài khoản?"
+			},
+			"button": {
+				"ok": "Xác nhận",
+				"cancel": "Hủy"
+			}
+		},
+		"message": {
+			"success": {
+				"create": "Tạo tài khoản thành công!",
+				"edit": "Cập nhật tài khoản thành công!",
+				"delete": "Xóa tài khoản thành công!"
+			},
+			"error": {
+				"create": "Tạo tài khoản thất bại!",
+				"edit": "Cập nhật tài khoản thất bại!",
+				"delete": "Xóa tài khoản thất bại!"
+			}
+		},
+		"decentralization": {
+			"superAdmin": "Quản lý tài khoản Admin (Super Admin)",
+			"admin": "Phê duyệt dịch vụ và gói dịch vụ (Admin)",
+			"customerCare": "Quản lý phiếu hỗ trợ (Chăm sóc khách hàng)"
+		}
+	}
+}

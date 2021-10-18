@@ -1,0 +1,85 @@
+/* start config tailwind */
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+@layer components {
+	.box-sme {
+		@apply px-4 py-6 rounded-2xl border border-solid border-gray bg-white;
+	}
+}
+a {
+	color: var(--color-primary);
+}
+p,
+a {
+	font-size: 1rem;
+}
+
+.whitespace-none {
+	white-space: unset !important;
+}
+.ph-text-transform-none::placeholder {
+	text-transform: none;
+}
+.flex-i {
+	display: flex !important;
+}
+.line-text-two {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	white-space: pre-wrap;
+}
+.container {
+	width: 100%;
+	max-width: 1330px;
+}
+@media (max-width: 1400px) {
+	.container {
+		width: calc(100% - 80px);
+		max-width: 1200px;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		width: calc(100% - 32px);
+		max-width: 768px;
+	}
+}
+
+#root {
+	height: 100%;
+}
+:root {
+	--color-primary: #2c3d94;
+	--ck-border-radius: 0.25rem;
+	--border-radius-base: 0.25rem;
+	--select-dropdown-height: 2rem;
+}
+.rounded-base {
+	border-radius: var(--border-radius-base);
+}
+
+html,
+body {
+	font-size: 16px !important;
+	background-color: #fcfcfd;
+}
+@media screen and (max-width: 1700px) {
+	html,
+	body {
+		font-size: 14px !important;
+	}
+}
+@media screen and (max-width: 1300px) {
+	html,
+	body {
+		font-size: 14px !important;
+	}
+}
+
+/* end config tailwind */
+.text-right-important {
+	text-align: right !important;
+}

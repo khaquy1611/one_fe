@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+  web:
+    image: node:14.15.4-alpine3.10
+    command: sh -c "npm install --global yarn"
+    working_dir: /app
+    command:  sh -c "yarn && yarn build"
+    environment:
+      - REACT_APP_SERVER_API=
+      - REACT_APP_SERVER_OAUTH=/auth-server
+      - REACT_APP_SERVER_USERNAME=vnpt_clientid
+      - REACT_APP_SERVER_PASSWORD=secret
+      - REACT_APP_SERVER_CLIENT_ID=vnpt_clientid
+      - REACT_APP_DOCS=http://172.20.20.12:90
+      - REACT_APP_SANDBOX_VNPT=https://dangnhap.vnpt.vn
+      - REACT_APP_CLIENT_ID_VNPT=pivpaais4ofYLmqwNVxWOO9jrw8a
+      - REACT_APP_AUTH_SERVER_DEV=/auth-server
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - builder-dev:/app/build
+volumes:
+  builder-dev:

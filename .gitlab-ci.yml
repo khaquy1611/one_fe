@@ -1,0 +1,51 @@
+stages:
+  - deploy
+deploy:
+  image: alpine
+  stage: deploy
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh -p $PORT $USER_ROOT@$SERVER_IP "cd $PATH_PROJECT && ./deployStaging.sh"
+  only:
+    - frontend_staging
+deployDocs:
+  image: alpine
+  stage: deploy
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh -p $PORT $USER_ROOT@$SERVER_IP "cd $PATH_PROJECT && ./deployDocs.sh"
+  only:
+    - frontend_docs
+
+deployDevv:
+  image: alpine
+  stage: deploy
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh -p $PORT  $USER_ROOT@$SERVER_IP "cd $PATH_PROJECT && ./deployDev.sh"
+  only:
+    - frontend_fordev
+deployRole:
+  image: alpine
+  stage: deploy
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh -p $PORT  $USER_ROOT@$SERVER_IP "cd $PATH_PROJECT && ./deployRole.sh"
+  only:
+    - frontend_for-role

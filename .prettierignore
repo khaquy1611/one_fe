@@ -1,0 +1,11 @@
+build/
+node_modules/
+package-lock.json
+jsconfig.json
+yarn.lock
+craco.config.js
+tailwind.config.js
+public/
+nginx-conf/
+docker-compose.*
+.gitlab-ci.yml

@@ -1,0 +1,162 @@
+{
+	"name": "vnpt-dx",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@ant-design/icons": "^4.3.0",
+		"@antv/g2plot": "^2.3.12",
+		"@antv/g6": "^4.1.12",
+		"@ckeditor/ckeditor5-build-classic": "^24.0.0",
+		"@ckeditor/ckeditor5-build-decoupled-document": "^29.2.0",
+		"@ckeditor/ckeditor5-react": "^3.0.2",
+		"@craco/craco": "^6.1.1",
+		"@egjs/flicking-plugins": "^4.1.0",
+		"@egjs/react-flicking": "^4.1.2",
+		"@react-spring/web": "^9.2.3",
+		"@reduxjs/toolkit": "^1.5.0",
+		"@tailwindcss/line-clamp": "^0.2.0",
+		"@tailwindcss/postcss7-compat": "^2.0.2",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"antd": "^4.16.5",
+		"antd-img-crop": "^3.14.1",
+		"array-move": "^3.0.1",
+		"autoprefixer": "^9.8.6",
+		"classnames": "^2.2.6",
+		"clsx": "^1.1.1",
+		"craco-less": "^1.17.1",
+		"env-cmd": "^10.1.0",
+		"file-saver": "^2.0.5",
+		"firebase": "^8.3.1",
+		"http-proxy-middleware": "^1.3.1",
+		"husky": "^4.3.6",
+		"i18next": "^19.8.4",
+		"i18next-browser-languagedetector": "^6.0.1",
+		"i18next-http-backend": "^1.0.21",
+		"immutability-helper": "^3.1.1",
+		"js-cookie": "^2.2.1",
+		"js-sha256": "^0.9.0",
+		"lint-staged": "^10.5.3",
+		"lodash": "^4.17.20",
+		"moment": "^2.29.1",
+		"node-sass": "4.14.1",
+		"postcss": "^7.0.35",
+		"prop-types": "^15.7.2",
+		"public-ip": "^4.0.4",
+		"react": "^17.0.1",
+		"react-dnd": "^14.0.2",
+		"react-dnd-html5-backend": "^14.0.0",
+		"react-dom": "^17.0.1",
+		"react-fast-compare": "^3.2.0",
+		"react-i18next": "^11.8.5",
+		"react-infinite-scroll-component": "^5.1.0",
+		"react-input-mask": "^2.0.4",
+		"react-intersection-observer": "^8.32.0",
+		"react-lazy-load": "^3.1.13",
+		"react-query": "^3.9.8",
+		"react-redux": "^7.2.2",
+		"react-resize-detector": "^6.7.2",
+		"react-responsive": "^8.2.0",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.1",
+		"react-sortable-hoc": "^2.0.0",
+		"react-swipeable": "^6.1.2",
+		"react-window": "^1.8.6",
+		"react-window-infinite-loader": "^1.0.7",
+		"redux": "^4.0.5",
+		"scroll-into-view-if-needed": "^2.2.26",
+		"styled-components": "^5.2.1",
+		"superagent": "^6.1.0",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+		"uuid": "^8.3.2",
+		"web-vitals": "^0.2.4",
+		"xlsx": "^0.17.2",
+		"yup": "^0.32.8"
+	},
+	"scripts": {
+		"start": "craco start",
+		"start:local": "env-cmd -f .env.local craco run start",
+		"build": "craco build",
+		"test": "craco test",
+		"analyze": "source-map-explorer 'build/static/js/*.js'",
+		"eject": "react-scripts eject",
+		"build:onesme": "env-cmd -f .env.production.onesme craco build"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest",
+			"airbnb",
+			"prettier",
+			"prettier/react",
+			"plugin:import/react",
+			"plugin:import/errors",
+			"plugin:import/warnings"
+		],
+		"plugins": [
+			"react",
+			"prettier"
+		],
+		"rules": {
+			"prettier/prettier": [
+				"warn"
+			],
+			"react/self-closing-comp": "warn",
+			"react/jsx-props-no-spreading": "off",
+			"react/button-has-type": "off",
+			"import/prefer-default-export": "off",
+			"react/prop-types": "off",
+			"no-unused-vars": "warn",
+			"no-debugger": "warn",
+			"no-plusplus": "off",
+			"no-param-reassign": "warn",
+			"react/forbid-prop-types": "warn",
+			"no-unused-expressions": "warn",
+			"import/no-extraneous-dependencies": "off"
+		},
+		"settings": {
+			"import/resolver": {
+				"node": {
+					"moduleDirectory": [
+						"node_modules",
+						"src/"
+					]
+				}
+			}
+		}
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+			"prettier --write --ignore-unknown"
+		]
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^12.0.0",
+		"@commitlint/config-conventional": "^12.0.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-prettier": "^3.3.0",
+		"prettier": "2.2.1",
+		"source-map-explorer": "^2.5.2"
+	}
+}

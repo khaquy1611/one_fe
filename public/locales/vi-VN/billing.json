@@ -1,0 +1,20 @@
+{
+	"select": {
+		"label": {
+			"service": "Tên dịch vụ",
+			"pricing": "Tên gói",
+			"status": "Trạng thái",
+			"time": "Khoảng thời gian"
+		}
+	},
+	"option": {
+		"status": {
+			"all": "Tất cả",
+			"init": "Khởi tạo",
+			"waiting": "Chưa thanh toán",
+			"paid": "Đã thanh toán",
+			"failed": "Thanh toán thất bại",
+			"outOfDate": "Đã quá hạn"
+		}
+	}
+}

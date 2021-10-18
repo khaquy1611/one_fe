@@ -1,0 +1,9 @@
+{
+	"addSuccess": "Tạo {{name}} thành công!",
+	"addError": "Tạo {{name}} thất bại!",
+	"editSuccess": "Chỉnh sửa {{name}} thành công!",
+	"editError": "Chỉnh sửa {{name}} thất bại!",
+	"deleteSuccess": "Xóa {{name}} thành công!",
+	"deleteError": "Xóa {{name}} thất bại!",
+	"updateStatusSuccess": "Cập nhật trạng thái thành công"
+}

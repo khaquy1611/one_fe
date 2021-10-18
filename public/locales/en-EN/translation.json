@@ -1,0 +1,140 @@
+{
+	"app": {
+		"status": {
+			"active": "Active",
+			"inactive": "Inactive",
+			"public": "Public",
+			"private": "Private",
+			"notUse": "Not use",
+			"used": "Used",
+			"hide": "Hidden",
+			"approved": "Approved",
+			"unApproved": "Not approved",
+			"refuse": "Refuse",
+			"approve": "Approved",
+			"waiting": "Waiting",
+			"enable": "Enable",
+			"disable": "Disable",
+			"activating": "Activating",
+			"cancelled": "Cancelled",
+			"all": "All",
+			"paid": "Paid",
+			"pendingPayment": "Pending payment",
+			"failedPayment": "Failed payment"
+		},
+		"edit": "Edit",
+		"servicePack": {
+			"nameService": "Service name",
+			"nameServicePack": "Service pack name",
+			"statusUsage": "Usage status",
+			"statusBrowsing": "Browsing status",
+			"updateAt": "Update time"
+		},
+		"error": {
+			"somethingWrong": "Something wrong, try again!"
+		},
+		"placeholderSearch": "Search",
+		"addServicePack": "Create service pack",
+		"loginScreen": {
+			"login": "Login",
+			"email": "Email",
+			"password": "Password",
+			"confirmPassword": "Confirm password",
+			"forgotPassword": "Forgot password",
+			"signIn": "Sign In",
+			"resetPassword": "Reset password",
+			"loginFail": "Login fail, try again!",
+			"register": "Register",
+			"registerDev": "Account register",
+			"corporateTaxCode": "Business tax code",
+			"phoneNumber": "Phone number",
+			"agreement": "Agree with",
+			"termOfUser": "Term of use",
+			"require": " is required!",
+			"patternEmail": "Email is invalid!",
+			"patternPhone": "Phone number is valid and 10 digit numbers",
+			"patternPassword": "Password must be between 8-16 characters, at least one number and both lower and uppercase letters and special characters!",
+			"patternConfirmPass": "Confirm that the new password does not match the New Password",
+			"back": "Back",
+			"oldPassword": "Temporary password",
+			"newPassword": "New password",
+			"confirmNewpassword": "Confirm new password",
+			"confirm": "Change password",
+			"receiveEmail": "Dot not received email?",
+			"resend": "Resend email.",
+			"comparePassword": "New password cannot match old password",
+			"gotoLogin": "Go to login",
+			"gotoRegister": "Go to register",
+			"gotoReset": "Go to reset password",
+			"gotoForgot": "Go to forgot password",
+			"registerSuccess": "Register Success!",
+			"registerFail": "Register Failure!",
+			"putPasswordSuccess": "Send temporary token success!",
+			"putPasswordFail": "Send temporary token failure!",
+			"activeEmail": "Please check your email for active account.",
+			"tempPassInEmail": "Please check your email for reset password",
+			"retryError": "An error occurred during processing. Please try again in a little minute",
+			"tempPassword": "Temporary Password Success!",
+			"changePassSuccess": "Change password success!",
+			"alertChangePassSuccess": "Processing change password is completed. Please login with new password",
+			"changePassFail": "Change password failure!",
+			"haveAccount": "Do you have account?",
+			"changePassword": "Change password",
+			"cancel": "Cancel",
+			"existEmail": "Email was exist!",
+			"existPhonenumber": "Phone number was exist!",
+			"invalidPass": "Old password is wrong!",
+			"emailNotfound": "Email is not found.",
+			"resetTokenFail": "ResetToken was expired. Please try again send email",
+			"userDisable": "The account has been disabled",
+			"wrongPass": "Password error",
+			"requireNewPassword": "Re-enter password must not be blank!"
+		},
+		"typePricing": {
+			"PERSON": "person",
+			"UNLIMITED": "unlimited"
+		},
+		"paymentRate": {
+			"ALL_IN": "ALL IN",
+			"MONTHLY": "MONTHLY",
+			"YEARLY": "YEARLY"
+		},
+		"sme": {
+			"account": {
+				"manage": "Manage acount",
+				"manageTool": "Manage tool",
+				"profile": "Person profile",
+				"companyProfile": "Company profile",
+				"securitySetting": "Security setting",
+				"logout": "Logout",
+				"employee": "Manage employee account",
+				"subscribe": "Manage subscribe",
+				"invoice": "Manage invoice",
+				"billSupport": "Manage support bill"
+			}
+		},
+		"customerCare": "Customer care",
+		"saasManagement": "Quản lý saas",
+		"developer": "Developer",
+		"role": {
+			"1": "Super Admin",
+			"2": "Admin",
+			"3": "Developer",
+			"4": "SME",
+			"5": "Employee"
+		}
+	},
+	"saas": {
+		"list": {
+			"all": "All",
+			"public": "Show",
+			"private": "Hide"
+		},
+		"status": {
+			"reject": "Reject",
+			"approved": "Approved",
+			"unapproved": "Unapproved",
+			"awaiting": "Awaiting"
+		}
+	}
+}
